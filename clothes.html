@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpingChild - Help For Poor Child</title>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - Start Header Section 
+  -->
+  <header class="header" data-header>
+    <div class="container">
+      <h1>
+        <a href="#" class="logo">HelpingChild</a>
+      </h1>
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <a href="#" class="logo">HelpingChild</a>
+        <ul class="navbar-list">
+          <li>
+            <a href="index.html" class="navbar-link" data-nav-link>
+              <span>Home / Clothes</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-action">
+        <button class="btn btn-primary" id="myBtn">
+          <span>Contact Me</span>
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <section class="section contact" id="contact">
+              <div class="title">
+                <h2 style="margin-top: 10px;margin-bottom: 10px;">Contact Me</h2>
+              </div>
+              <div class="container">
+                <form id="contact-form">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+              
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+              
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                  
+                  <button class="btn btn-secondary" type="submit">
+                    <span>Submit</span>
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </form>                      
+              </div> 
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 
+    - End Header Section
+  -->
+
+  <main>
+    <article>
+      <!-- 
+        - Start HERO Section
+      -->
+      <section class="hero" id="home">
+        <div class="container">
+        </div>
+      </section>    
+      <!-- 
+        - End HERO Section
+      -->
+      
+       <!-- 
+        - Start Food Section
+      -->
+      <section class="section food">
+        <div class="container">
+            <h2 class="h2 section-title" style="text-align: center; padding-bottom: 30px;">
+                Clothes the Community - A Charity For Clothes 
+            </h2>
+            <div class="desc">
+                <h3>Introduction :</h3>
+                <p style="margin-left: 15px;">
+                    "Clothe the Community" is a compassionate and impactful charity dedicated to alleviating hunger
+                    and food insecurity in our communities. With a firm belief that no one should go to bed hungry.
+                    we have embarked on a mission to provide nourishing meals to those in need and create a supportive
+                    environment that fosters dignity and hope for a better future.
+                </p>
+                <div style="padding-bottom: 15px;"></div>
+                <h3>Mission :</h3>
+                <p style="margin-left: 15px;">
+                    Our mission is to ensure that every person has access to clean,appropriate clothing that suits their
+                    needs.By doing so, we aim to restore confidence,promote self esteem, and contribute to the overall well 
+                    being of our community members.
+                </p>
+                <div style="padding-bottom: 15px;"></div>
+
+                <h3>Program and Initiatives :</h3>
+                <div style="padding-bottom: 15px;"></div>
+                <h4>1. Clothing Drives :</h4>
+                <p style="margin-left: 15px;">
+                    Clothing drives are organized efforts to collect a significant number of clothing items from a community or group of people. 
+                    These drives are often coordinated by charitable organizations, schools, religious institutions, or businesses. They can be one-time events or ongoing campaigns.
+                </p>
+                <div style="padding-bottom: 15px;"></div>
+                <h4>2. Donating Clothes :</h4>
+                <p style="margin-left: 15px;">
+                    Individuals, families, and organizations choose to donate their gently used or new clothing items to charitable organizations. These items can include clothing 
+                    for adults, children, and infants, as well as shoes, accessories, and outerwear.
+                </p>
+                <div style="padding-bottom: 15px;"></div>
+                <h4>3. Charitable Organizations :</h4>
+                <p style="margin-left: 15px;">
+                    Various nonprofit organizations and charities facilitate clothing donations. These organizations often have established networks for collecting, sorting, 
+                    and distributing donated items efficiently.
+                </p>
+                <div style="padding-bottom: 15px;"></div>
+                <!-- <h4>4. Benefits of Clothing Charity :</h4>
+                <p style="margin-left: 15px;">
+                    Charitable organizations often distribute stationery to communities with limited access to educational resources.
+                </p>
+                <div style="padding-bottom: 15px;"></div>
+                <h4>5. Schools in Developing Regions :</h4>
+                <p style="margin-left: 15px;">
+                    Donations can be sent to schools in developing countries where access to stationery is scarce.
+                </p>
+                <div style="padding-bottom: 15px;"></div>
+                <h4>6. Charitable Organizations :</h4>
+                <p style="margin-left: 15px;">
+                    Clothing drives foster a sense of community involvement and empathy by encouraging people to contribute to the well-being of others. 
+                </p> -->
+            </div>
+        </div>
+      </section>
+      <!-- 
+        - End Food Section
+      -->     
+    </article>
+  </main>
+
+  <!-- 
+    - Start FOOTER Section
+  -->
+  <footer class="footer">
+    <div class="container" id="footer-container">
+      <ul class="footer-list">
+        <!-- <ion-icon name="mail-outline" aria-hidden="true" style="margin-top: 9px;"></ion-icon> -->
+        <li>
+          <a href="#" class="footer-link">komsy0104@gmail.com</a>
+        </li>
+        <!-- <ion-icon name="call-outline" aria-hidden="true" style="margin-top: 9px;"></ion-icon> -->
+        <li>
+          <a href="#" class="footer-link">9022618671</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        © copyright 2023 <a href="#" class="copyright-link">@KomalWaghmare</a>. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- 
+    - End FOOTER Section
+  -->
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

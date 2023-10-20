@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpingChild - Help For Poor Child</title>
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+  <link rel="shortcut icon" href="./hand.png" type="image">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+
+  <!-- 
+    - Start Header Section 
+  -->
+  <header class="header" data-header>
+    <div class="container">
+      <h1>
+        <a href="#" class="logo">HelpingChild</a>
+      </h1>
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <a href="#" class="logo">HelpingChild</a>
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>
+              <span>Home</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>About</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Service</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#donate" class="navbar-link" data-nav-link>
+              <span>Donate</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#gallary" class="navbar-link" data-nav-link>
+              <span>Gallary</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-action">
+        <button class="btn btn-primary" id="myBtn">
+          <span>Contact Me</span>
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <section class="section contact" id="contact">
+              <div class="title">
+                <h2 style="margin-top: 10px;margin-bottom: 10px;">Contact Me</h2>
+              </div>
+              <div class="container">
+                <form id="contact-form">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+              
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+              
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                  
+                  <button class="btn btn-secondary" type="submit">
+                    <span>Submit</span>
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </form>                      
+              </div> 
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 
+    - End Header Section
+  -->
+
+  <main>
+    <article>
+      <!-- 
+        - Start Hero Section
+      -->
+      <section class="hero" id="home">
+        <div class="container">
+        </div>
+      </section>    
+      <!-- 
+        - End Hero Section
+      -->
+      
+      <!-- 
+        - Start ABOUT Section 
+      -->
+      <section class="section about" id="about">
+        <div class="title">
+          <h2>About</h2>
+        </div>
+        <div class="container">
+          <div class="about-banner">
+            <div class="banner-row">
+              <div class="banner-col">
+                <img src="./assets/images/img-1.png" width="315" height="380" loading="lazy" alt="Tiger"
+                  class="about-img w-100">
+                <img src="./assets/images/img-2.png" width="386" height="250" loading="lazy" alt="Panda"
+                  class="about-img about-img-2 w-100">
+              </div>
+              <div class="banner-col">
+                <img src="./assets/images/img-3.png" width="250" height="277" loading="lazy" alt="Elephant"
+                  class="about-img about-img-3 w-100">
+                <img src="./assets/images/img-4.png" width="315" height="380" loading="lazy" alt="Deer"
+                  class="about-img w-100">
+              </div>
+            </div>
+          </div>
+          <div class="about-content">
+            <p class="section-subtitle">
+              <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+              <span>Why Choose Us</span>
+            </p>
+            <h2 class="h2 section-title">
+              Rise Your Hand to Save <strong>Poor Child Life</strong>
+            </h2>
+            <div class="tab-content"> 
+              <p class="section-text">
+                But I must explain to you how all this mistaken denouncing pleasure and praising pain was born and I
+                will give you a
+                complete account of the system expoundmaster
+              </p>
+              <ul class="tab-list">
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                  <p class="tab-text">Charity For Foods</p>
+                </li>
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                  <p class="tab-text">Charity For Education</p>
+                </li>
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                  <p class="tab-text">Charity For Stationary</p>
+                </li>
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                  <p class="tab-text">Charity For Clothes</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- 
+        - End About Section 
+      -->
+
+      <!-- 
+        - Start Service Section 
+      -->
+      <section class="section service" id="service">
+        <div class="title">
+          <h2>Service</h2>
+        </div>
+        <div class="container">
+          <ul class="service-list">
+            <li>
+              <div class="service-card">
+                <h3 class="h3 card-title">Save Foods</h3>
+                <p class="card-text">
+                  To ensure that every individual has access to wholesome and nutritious food,
+                </p>
+                <a href="food.html" class="btn-link">
+                  <span>Read More</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <h3 class="h3 card-title">Education</h3>
+                <p class="card-text">
+                  To provide educational opportunities,resources and support to underserved
+                  communities
+                </p>
+                <a href="education.html" class="btn-link">
+                  <span>Read More</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <h3 class="h3 card-title">Stationary</h3>
+                <p class="card-text">
+                  To ensure that no student is held back due to lack
+                  of stationary. By providing the necessary tools 
+                </p>
+                <a href="stationary.html" class="btn-link">
+                  <span>Read More</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <h3 class="h3 card-title">Clothes</h3>
+                <p class="card-text">
+                  To ensure that every person has access to clean,appropriate clothing
+                  that suits their needs.
+                </p>
+                <a href="clothes.html" class="btn-link">
+                  <span>Read More</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+       <!-- 
+        - End Service Section
+      --> 
+
+      <!-- 
+        - Start Donate Section
+      -->
+      <section class="section donate" id="donate">
+        <div class="title">
+          <h2>Donate</h2>
+        </div>
+        <div class="container">
+          <ul class="donate-list">
+            <li>
+              <div class="donate-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/food.jpg" width="520" height="325" loading="lazy" alt="Food"
+                    class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Raise Hand To Helping Poor Child For Food Donation</h3>
+                  <a href="#footer">
+                    <button class="btn btn-secondary">
+                      <span>Donation</span>
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </a> 
+                  <!--Donation Modal-->     
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="donate-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/edu.jpg" width="520" height="325" loading="lazy" alt="Education" 
+                    class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Raise Hand To Helping Poor Child For Education</h3>
+                  <a href="#footer">
+                    <button class="btn btn-secondary">
+                      <span>Donation</span>
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="donate-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/stationary.jpg" width="520" height="325" loading="lazy" alt="Stationary"
+                    class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Raise Hand To Helping Poor Child For Stationary</h3>
+                  <a href="#footer">
+                    <button class="btn btn-secondary">
+                      <span>Donation</span>
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="donate-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/clothes.jpg" width="520" height="325" loading="lazy" alt="Clothes"
+                    class="img-cover">
+                </figure>
+                <div class="card-content">                 
+                  <h3 class="h3 card-title">Raise Hand To Helping Poor Child For Clothes</h3>
+                  <a href="#footer">
+                    <button class="btn btn-secondary">
+                      <span>Donation</span>
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+       <!-- 
+        - End Donate Section
+      -->
+
+       <!-- 
+        - Start Gallary Section
+      -->
+      <section class="insta-post gallary" id="gallary">
+        <div class="title">
+          <h2>Gallary</h2>
+        </div>
+        <ul class="insta-post-list">
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/gal-1.jfif" width="320" height="300" loading="lazy" alt="gal-1"
+                class="img-cover">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/gal-2.jfif" width="320" height="300" loading="lazy" alt="gal-2"
+                class="img-cover">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/gal-3.jfif" width="320" height="300" loading="lazy" alt="gal-3"
+                class="img-cover">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/gal-4.jfif" width="320" height="300" loading="lazy" alt="gal-4"
+                class="img-cover">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/gal-5.jpg" width="320" height="300" loading="lazy" alt="gal-5"
+                class="img-cover">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </section>
+       <!-- 
+        - End Gallary Section
+      --> 
+    </article>
+  </main>
+
+  <!-- 
+    - Start FOOTER Section
+  -->
+  <footer class="footer" id="footer">
+    <div class="container" id="footer-container">
+      <ul class="footer-list">
+        <!-- <ion-icon name="mail-outline" aria-hidden="true" style="margin-top: 9px;"></ion-icon> -->
+        <li>
+          <a href="#" class="footer-link">komsy0104@gmail.com</a>
+        </li>
+        <!-- <ion-icon name="call-outline" aria-hidden="true" style="margin-top: 9px;"></ion-icon> -->
+        <li>
+          <a href="#" class="footer-link">9022618671</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        © copyright 2023 <a href="#" class="copyright-link">@KomalWaghmare</a>. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- 
+    - End FOOTER Section
+  -->
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

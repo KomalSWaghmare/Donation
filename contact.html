@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  h3
+  {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 7px;
+  }
+  h4
+  {
+    color: black;
+  }
+  h3, label
+  {
+    color: white;
+  }
+  .modal-donation
+  {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  }
+
+.modal-content-donation
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+    /* background-color: black; */
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.outer 
+{ 
+  display: flex; 
+  /* flex-direction: column;  */
+  /* flex-wrap: wrap;  */
+  height: 120px; 
+  width: 382px; 
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+} 
+.e 
+{ 
+  /* width: 171px;  */
+  /* flex: 0 0 52px;  */
+  margin: 24px; 
+  /* background-color: green;  */
+} 
+</style>
+<body>
+
+  <button class="trigger">Click here to trigger the modal!</button>
+  <div class="modal-donation">
+      <div class="modal-content-donation">
+          <span class="close-button">×</span>
+          <h4>For Poor Child donation please contact via email or call</h4>
+          <div class="outer">
+            <div class="e">
+              <h3>Email Id </h3>
+              <label>komsy0104@gmail.com</label>
+            </div>
+            <div class="e">
+              <h3>Mobile No </h3>
+              <label>9022618671</label>
+            </div>    
+          </div>      
+      </div>
+  </div>
+      
+  <script>
+    const modal = document.querySelector(".modal-donation");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+  </script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpingChild - Help For Poor Child</title>
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - Start Header Section 
+  -->
+  <header class="header" data-header>
+    <div class="container">
+      <h1>
+        <a href="#" class="logo">HelpingChild</a>
+      </h1>
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <a href="#" class="logo">HelpingChild</a>
+        <ul class="navbar-list">
+          <li>
+            <a href="index.html" class="navbar-link" data-nav-link>
+              <span>Home / Foods</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>About</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Service</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#donate" class="navbar-link" data-nav-link>
+              <span>Donate</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#event" class="navbar-link" data-nav-link>
+              <span>Gallary</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>
+              <span>Contact</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li> -->
+        </ul>
+      </nav>
+      <div class="header-action">
+        <button class="btn btn-primary" id="myBtn">
+          <span>Contact Me</span>
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <section class="section contact" id="contact">
+              <div class="title">
+                <h2 style="margin-top: 10px;margin-bottom: 10px;">Contact Me</h2>
+              </div>
+              <div class="container">
+                <form id="contact-form">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+              
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+              
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                  
+                  <button class="btn btn-secondary" type="submit">
+                    <span>Submit</span>
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </form>                      
+              </div> 
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 
+    - End Header Section
+  -->
+
+  <main>
+    <article>
+      <!-- 
+        - Start HERO Section
+      -->
+      <section class="hero" id="home">
+        <div class="container">
+        </div>
+      </section>    
+      <!-- 
+        - End HERO Section
+      -->
+      
+       <!-- 
+        - Start Food Section
+      -->
+      <section class="section food">
+        <div class="container">
+            <h2 class="h2 section-title" style="text-align: center; padding-bottom: 30px;">
+                Nourish Every Soul - A Charity For Food 
+            </h2>
+            <div class="desc">
+                <h3>Introduction :</h3>
+                <p style="margin-left: 15px;">
+                   "Nourish Every Soul" is a compassionate and impactful charity dedicated to alleviating hunger
+                   and food insecurity in our communities. With a firm belief that no one should go to bed hungry.
+                   we have embarked on a mission to provide nourishing meals to those in need and create a supportive
+                   environment that fosters dignity and hope for a better future.
+                </p>
+                <div style="padding-bottom: 15px;"></div>
+                <h3>Mission :</h3>
+                <p style="margin-left: 15px;">
+                  Our Mission is to ensure that every individual has access to wholesome and nutritious food, 
+                  irrespective of their socioeconomic status. Through our dedicated efforts, we aim to combat 
+                  hunger, promote health and restore a sense of dignity to those facing food insecurity.
+                </p>
+                <div style="padding-bottom: 15px;"></div>
+
+                <h3>Program and Initiatives :</h3>
+                <div style="padding-bottom: 15px;"></div>
+                <h4>1. Community Kitchens :</h4>
+                <p style="margin-left: 15px;">
+                   We operate community kitchens where volunteers come together to prepare and serve balanced
+                   meals to underserved populations. These spaces not only provide nourishment but also foster
+                   a sense of belonging and camaraderie.
+                </p>
+                <div style="padding-bottom: 15px;"></div>
+                <h4>2. Food Distribution Drives :</h4>
+                <p style="margin-left: 15px;">
+                   Regular food distribution drives are organized in collaboration with local partners, where
+                   essential food items are distributed to families and individuals facing financial difficulities.
+                </p>
+                <div style="padding-bottom: 15px;"></div>
+                <h4>3. School Nutrition :</h4>
+                <p style="margin-left: 15px;">
+                    We believe in investing in the future. Our school nutrition program ensures that children have 
+                    access to healthy meals,providing their physical and cognitive development.
+                </p>
+                <div style="padding-bottom: 15px;"></div>
+                <h4>4. Nutrition Workshops :</h4>
+                <p style="margin-left: 15px;">
+                    Eduction is key. We conduct workshops on budget friendly
+                </p>
+            </div>
+        </div>
+      </section>
+      <!-- 
+        - End Food Section
+      -->
+    
+     
+     
+    </article>
+  </main>
+
+  <!-- 
+    - Start FOOTER Section
+  -->
+  <footer class="footer">
+    <div class="container" id="footer-container">
+      <ul class="footer-list">
+        <!-- <ion-icon name="mail-outline" aria-hidden="true" style="margin-top: 9px;"></ion-icon> -->
+        <li>
+          <a href="#" class="footer-link">komsy0104@gmail.com</a>
+        </li>
+        <!-- <ion-icon name="call-outline" aria-hidden="true" style="margin-top: 9px;"></ion-icon> -->
+        <li>
+          <a href="#" class="footer-link">9022618671</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        © copyright 2023 <a href="#" class="copyright-link">@KomalWaghmare</a>. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- 
+    - End FOOTER Section
+  -->
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
